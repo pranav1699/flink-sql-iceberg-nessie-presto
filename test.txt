@@ -157,3 +157,4 @@ CREATE CATALOG iceberg_nessie WITH (
 		
 create table iceberg_nessie.default_database.orders_iceberg_upsert with ('format-version'='2', 'write.upsert.enabled'='true') LIKE orders (EXCLUDING OPTIONS);
 
+set 'execution.checkpointing.interval'='3000' ;
